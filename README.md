@@ -11,10 +11,11 @@ The paper presents a novel approach called Physics-informed Residual Diffusion (
 
 - **Markov Chain Transition**: PiRD builds a Markov chain between LF and HF flow fields, facilitating the transition from any LF distribution to the HF distribution, unlike CNN-based methods that are limited to specific LF data patterns.
 - **Physics-Informed Constraints**: PiRD integrates physics-informed constraints into the objective function, ensuring the reconstructed flow fields comply with the underlying physical laws (e.g., vorticity transport equation) at every step of the Markov chain.
-- 
+  
 <div align="center">
 ![model](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/4655441f-8392-4cb8-907a-f5ea1e3f88c7)
 </div>
+
 ---
 
 ## Visualizations
