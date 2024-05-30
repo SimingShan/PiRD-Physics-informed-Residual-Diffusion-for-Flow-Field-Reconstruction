@@ -35,7 +35,9 @@ The following table shows the flow fields with different densities of Gaussian n
 | ![gt0 2](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/28eff09f-26c5-44b5-b9e5-4e0b2d5b9163) | ![gt0 6](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/3a4289cc-2c89-4972-8c2c-3ccc9fda1670) | ![gt1](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/ef2b8042-f4e8-4e69-8782-fc36a629daaa) |
 | ![diffusin_0 2](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/d3c36b6c-c1c6-4efc-997d-706436ec75b5) | ![diffusin_0 6](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/c140a2a1-38a8-4a55-a7bd-f003f0d1749b) | ![diffusin_1](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/2bfdee78-490e-41ce-986e-a770e8c72402) |
 
+
+![trend_noise_density_smooth](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/4e34c73f-44bf-4371-a868-de6ac43e3670)
 ---
 
 For more details, please visit the [GitHub Repository](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction).
-![gt1](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/ef2b8042-f4e8-4e69-8782-fc36a629daaa)
+
