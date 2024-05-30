@@ -36,6 +36,10 @@ The paper presents a novel approach called Physics-informed Residual Diffusion (
 
 ### Flow Fields with Gaussian Noise Densities
 
+<div align="center">
+<img src="https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/4e34c73f-44bf-4371-a868-de6ac43e3670" alt="trend_noise_density_smooth">
+</div>
+
 The following table shows the flow fields with different densities of Gaussian noise added (0.2, 0.6, 1), and the corresponding reconstructed flow fields using PiRD.
 
 <div align="center">
@@ -47,9 +51,6 @@ The following table shows the flow fields with different densities of Gaussian n
 
 </div>
 
-<div align="center">
-<img src="https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/4e34c73f-44bf-4371-a868-de6ac43e3670" alt="trend_noise_density_smooth">
-</div>
 
 ---
 
