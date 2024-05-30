@@ -1,9 +1,8 @@
 # PiRD: Physics-informed Residual Diffusion for Flow Field Reconstruction
 
 **Authors**: Siming Shan, Pengkai Wang, Song Chen, Jiaxu Liu  
-**Proudly Advised by**: Professor Shengze Cai
+**Advised by**: Professor Shengze Cai
 
----
 
 ## Abstract
 
@@ -12,12 +11,10 @@ The paper presents a novel approach called Physics-informed Residual Diffusion (
 - **Markov Chain Transition**: PiRD builds a Markov chain between LF and HF flow fields, facilitating the transition from any LF distribution to the HF distribution, unlike CNN-based methods that are limited to specific LF data patterns.
 - **Physics-Informed Constraints**: PiRD integrates physics-informed constraints into the objective function, ensuring the reconstructed flow fields comply with the underlying physical laws (e.g., vorticity transport equation) at every step of the Markov chain.
 
----
-
 ## Visualizations
 
 ### Low-Fidelity Flow Fields
-| ![low_4x](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/0753435b-1c4c-4c01-b7f0-45ab1edd9a18) | ![low_8x](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/fc82c7cb-2415-45d8-9168-b0f8b88a86d4) | ![low_5p](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/0ad80509-c905-43a4-89f6-c8b3c7ea7362) | ![low_1p](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/1a00ee2d-4d14-43c9-b983-09a88bf764f1) |
+| ![low_4x](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/0753435b-1c4c-4c01-b7f0-45ab1edd9a18) | ![low_8x](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/fc82c7cb-2415-45d8-9168-b0f8b88a86d4) | ![low_5p](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/43f6cc4c-2919-4800-950e-e4ffbc4f20ef) | ![low_1p](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction/assets/81949413/1a00ee2d-4d14-43c9-b983-09a88bf764f1) |
 |---|---|---|---|
 | LF Flow Field 4x | LF Flow Field 8x | LF Flow Field 5% | LF Flow Field 1% |
 
@@ -29,3 +26,4 @@ The paper presents a novel approach called Physics-informed Residual Diffusion (
 ---
 
 For more details, please visit the [GitHub Repository](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction).
+
