@@ -3,8 +3,6 @@
 **Authors**: Siming Shan, Pengkai Wang, Song Chen, Jiaxu Liu  
 **Advised by**: Professor Shengze Cai
 
----
-
 ## Abstract
 
 The paper presents a novel approach called Physics-informed Residual Diffusion (PiRD) for reconstructing high-fidelity (HF) flow fields from low-fidelity (LF) observations. The key highlights are:
