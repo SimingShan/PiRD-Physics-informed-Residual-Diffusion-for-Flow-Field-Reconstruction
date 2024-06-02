@@ -58,4 +58,7 @@ The following table shows the flow fields with different densities of Gaussian n
 
 ---
 
+### Download Links
+For the dataset, please download through this link : https://drive.google.com/file/d/1CUHSF9pUtsrEtHKd07dFuplK7RtVx6ck/view?usp=drive_link
+For the model, please download through this link : https://drive.google.com/file/d/13Hqx-sdTelyaLiVwZoQwDFSoSDPCvUbl/view?usp=drive_link
 For more details, please visit the [GitHub Repository](https://github.com/SimingShan/PiRD-Physics-informed-Residual-Diffusion-for-Flow-Field-Reconstruction).
