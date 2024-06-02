@@ -1,0 +1,54 @@
+dataset:
+  path: 'train.npy'
+  transform: 'std'
+  image_size: 256
+
+corruption:
+  method: 'skip' # select from skip, average, and portion(select x% of the data)
+  scale: 4
+  portion: 0.04
+
+visualization:
+  sample_index: 0
+  channel: 0
+
+diffusion:
+  target: str
+  sf: 4
+  schedule_name: exponential
+  etas_end: 0.99
+  steps: 20
+  min_noise_level: 0.04
+  kappa: 2
+  weighted_mse: True
+  predict_type: x start
+  scale_factor: 1
+  normalize_input: True
+  latent_flag: True
+  kwargs: 0.3
+  num_diffusion_steps: 20
+
+model:
+  type: "conditional"
+  in_channels: 3
+  out_ch: 3
+  ch: 64
+  ch_mult: [1, 2, 2, 4]
+  num_res_blocks: 1
+  attn_resolutions: [64,32,16,8]
+  dropout: 0.0
+  var_type: fixedlarge
+  ema_rate: 0.9999
+  ema: True
+  resamp_with_conv: True
+  ckpt_path: "./pretrained_weights/conditional_ckpt.pth"
+
+train:
+  epoch: 20
+  lr: 0.001
+  MSE_weight: 0.4
+  ADV_weight: 0.4
+  DIF_weight: 0.15
+  BC_weight: 0.05
+  save_interval: 20
+  batch_size: 8
