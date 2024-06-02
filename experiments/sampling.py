@@ -1,16 +1,15 @@
 import torch
-from datasets import FlowDataset, corrupt_and_upscale_image
-from diffusion import extract_into_tensor, get_schedule
+from utils.datasets import FlowDataset, corrupt_and_upscale_image
+from Diffusion.diffusion import extract_into_tensor, get_schedule
 import yaml
 import numpy as np
-from config_util import AppConfig
-from datasets import show_blur_image, StdScaler
-from losses import vorticity_residual
-from u_net_attention import ConditionalModel
+from utils.config_util import AppConfig
+from utils.datasets import show_blur_image
+from Diffusion.u_net_attention import ConditionalModel
 import os
 os.environ['KMP_DUPLICATE_LIB_OK']='TRUE'
 
-with open('config.yml') as f:
+with open('../configs/config.yml') as f:
     raw_config = yaml.safe_load(f)
 config = AppConfig(**raw_config)
 

@@ -2,7 +2,7 @@ import math
 import numpy as np
 import torch
 import random
-from datasets import corrupt_and_upscale_image
+from utils.datasets import corrupt_and_upscale_image
 
 def get_schedule(config):
     """

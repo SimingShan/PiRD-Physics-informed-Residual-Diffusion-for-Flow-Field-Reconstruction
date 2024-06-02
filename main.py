@@ -1,15 +1,15 @@
 from torch.utils.data import DataLoader
 import yaml
-from config_util import AppConfig
-from u_net_attention import ConditionalModel
-from datasets import FlowDataset, FlowDataset_three_channel, corrupt_and_upscale_image
-from trainer import train_epoch, train_epoch_three_channel, train_unet
+from utils.config_util import AppConfig
+from Diffusion.u_net_attention import ConditionalModel
+from utils.datasets import FlowDataset, FlowDataset_three_channel
+from Train.trainer import train_epoch, train_epoch_three_channel, train_unet
 import torch
-import torch.optim as optim
 from datetime import datetime
-from sampler import validation, validation_three_channel, validation_unet
-from losses import l2_loss
-def load_config(path='config.yml'):
+from Train.sampler import validation_three_channel, validation_unet
+
+
+def load_config(path='configs/config.yml'):
     with open(path) as f:
         raw_config = yaml.safe_load(f)
     return AppConfig(**raw_config)

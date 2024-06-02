@@ -2,10 +2,10 @@ from tqdm import tqdm
 import torch
 import yaml
 import numpy as np
-from config_util import AppConfig
-from diffusion import get_schedule, extract_into_tensor, corrupt_and_upscale_image
-from losses import calculate_loss_dev, calculate_loss_dev_three_channel, l2_loss, voriticity_residual_three_channel, boundary_condition_residual
-with open('config.yml') as f:
+from utils.config_util import AppConfig
+from Diffusion.diffusion import get_schedule, extract_into_tensor, corrupt_and_upscale_image
+from Loss.losses import calculate_loss_dev, calculate_loss_dev_three_channel, l2_loss, voriticity_residual_three_channel, boundary_condition_residual
+with open('configs/config.yml') as f:
     raw_config = yaml.safe_load(f)
 config = AppConfig(**raw_config)
 

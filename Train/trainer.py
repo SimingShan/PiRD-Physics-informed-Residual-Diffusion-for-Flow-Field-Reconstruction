@@ -1,9 +1,9 @@
-from diffusion import diffusion
-from losses import calculate_loss, calculate_loss_three_channel
+from Diffusion.diffusion import diffusion
+from Loss.losses import calculate_loss, calculate_loss_three_channel
 from tqdm import tqdm
 import torch
-from datasets import corrupt_and_upscale_image
-from losses import l2_loss, voriticity_residual_three_channel, boundary_condition_residual
+from utils.datasets import corrupt_and_upscale_image
+from Loss.losses import l2_loss, voriticity_residual_three_channel, boundary_condition_residual
 torch.set_printoptions(edgeitems=3, linewidth=200, threshold=5000)
 def train_epoch(model, dataloader, optimizer, config, device):
     model.train()

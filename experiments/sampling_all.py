@@ -5,12 +5,12 @@ from torch.utils.data import DataLoader
 import numpy as np
 import torch
 import yaml
-from data_utils.data_loader import create_dataloader, PairedDataset
+from data_utils.data_loader import PairedDataset
 from tqdm import tqdm
-from losses.losses import voriticity_residual, boundary_condition_residual, l2_loss, relative_error_loss
+from Loss.losses import voriticity_residual, relative_error_loss
 
 from data_utils.LR_mixing import corrupt_and_upscale_image
-from diffusion.diffusion_parameters import get_schedule, extract_into_tensor
+from Diffusion.diffusion import get_schedule, extract_into_tensor
 from data_utils.data_loader import FlowDataset
 
 from unet.unet import ConditionalModel
@@ -125,6 +125,4 @@ scaler = dataset_test.transform
 dataloader_test = DataLoader(dataset_test, batch_size=8, shuffle=True)
 sample = sample_all(model, dataloader_test, device, config, scaler)
 print(sample)
-# 0.1797
-# 0.2863
-# 0.3881
+
